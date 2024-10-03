@@ -1,0 +1,18 @@
+body {
+    background: rgba(238, 238, 238, 0.842);
+    margin-top: 50px;
+    margin-left: 100px;
+    }
+  
+  p {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    color: rgb(41, 41, 41);
+    }
+  
+  h3 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.3em;
+    color: FireBrick;
+    }
+
