@@ -1,18 +1,62 @@
 body {
-    background: rgba(238, 238, 238, 0.842);
-    margin-top: 50px;
-    margin-left: 100px;
-    }
-  
-  p {
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    color: rgb(41, 41, 41);
-    }
-  
-  h3 {
+  background: rgba(238, 238, 238, 0.842);
+  margin-top: 50px;
+  margin-left: 100px;
+  }
+
+p {
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  color: rgb(41, 41, 41);
+  }
+
+h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.3em;
+  color: FireBrick;
+  }
+
+h2 {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 1.3em;
-    color: FireBrick;
+    font-size: 1.5em;
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 1px #979797;
     }
 
+ul li {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+  }
+  
+
+input {
+    margin-top: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+input::file-selector-button {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    background-color: rgb(173, 27, 27);
+    border: thin solid rgb(107, 107, 107);
+    border-radius: 2px;
+  }
+
+input[type=submit] {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    background-color: rgb(22, 117, 10);
+    border: thin solid rgb(107, 107, 107);
+    border-radius: 2px;
+  }
+#boxed {
+background-color: beige;
+padding: 5px;
+}

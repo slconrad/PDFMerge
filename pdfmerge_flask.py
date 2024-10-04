@@ -1,13 +1,3 @@
-from flask import Flask, render_template, request
-from werkzeug.utils import secure_filename
-import PyPDF2
-import datetime
-import random
-
-now = datetime.datetime.now()
-
-app = Flask(__name__, static_folder='', static_url_path='')
-
 @app.route('/')
 def upload_file():
    return render_template('index.html')
@@ -27,13 +17,16 @@ def upload_files():
             pageObj = reader.pages[page_number]
             pdfWriter.add_page(pageObj) #use add_page
    date = str(now.strftime("%Y-%m-%d"))
-   rand = str(random.randint(1,10000))
-   seq = date+rand
-   file_name_pdf = 'G2G-'+seq+'.pdf'
+   # rand = str(random.randint(1,10000))
+   seq = date
+   file_name_pdf = 'Merged-'+seq+'.pdf'
    pdfOutput=open(file_name_pdf,'wb')
    pdfWriter.write(pdfOutput)
    pdfOutput.close()
    return app.send_static_file(file_name_pdf)
+
+# Update code to extract text from PDF
+# @app.route('/pdftext', methods = ['GET', 'POST'])
 
 if __name__ == '__main__':
    app.run('192.168.156.205')
